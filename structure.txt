@@ -1,0 +1,42 @@
+.
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── api
+│   │   └── unsplashApi.ts
+│   ├── components
+│   │   ├── App
+│   │   │   ├── App.module.css
+│   │   │   └── App.tsx
+│   │   ├── ErrorMessage
+│   │   │   ├── ErrorMessage.module.css
+│   │   │   └── ErrorMessage.tsx
+│   │   ├── ImageCard
+│   │   │   ├── ImageCard.module.css
+│   │   │   └── ImageCard.tsx
+│   │   ├── ImageGallery
+│   │   │   ├── ImageGallery.module.css
+│   │   │   └── ImageGallery.tsx
+│   │   ├── ImageModal
+│   │   │   ├── ImageModal.module.css
+│   │   │   └── ImageModal.tsx
+│   │   ├── LoadMoreBtn
+│   │   │   ├── LoadMoreBtn.module.css
+│   │   │   └── LoadMoreBtn.tsx
+│   │   ├── Loader
+│   │   │   ├── Loader.module.css
+│   │   │   └── Loader.tsx
+│   │   └── SearchBar
+│   │       ├── SearchBar.module.css
+│   │       └── SearchBar.tsx
+│   ├── index.css
+│   ├── main.ts
+│   └── vite-env.d.ts
+├── structure.txt
+└── tsconfig.json
+
+13 directories, 27 files

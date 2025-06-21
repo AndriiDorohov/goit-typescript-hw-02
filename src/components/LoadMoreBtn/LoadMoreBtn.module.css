@@ -1,0 +1,19 @@
+.loadMoreBtn {
+    display: flex;
+    width: fit-content;
+    margin: auto auto 10px auto;
+    padding: 5px 60px;
+    color: #ffffff;
+    background-color: #334fab;
+    cursor: pointer;
+    border-radius: 2px;
+    border-style: hidden;
+}
+
+.loadMoreBtn:hover {
+    background-color: #bbb;
+    transform: scale(1.05);
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
