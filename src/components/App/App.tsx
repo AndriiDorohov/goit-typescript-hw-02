@@ -45,7 +45,7 @@ export default function App() {
       const newImages = response.images;
 
       if (newImages.length === 0) {
-        toast.info('No more images available.');
+        toast('No more images available.');
         setIsLoading(false);
         return;
       }
