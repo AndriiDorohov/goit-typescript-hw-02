@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import type { useState, ChangeEvent, FormEvent } from 'react';
 import { MdSearch } from 'react-icons/md';
 import toast from 'react-hot-toast';
 import css from './SearchBar.module.css';

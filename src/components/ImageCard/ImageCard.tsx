@@ -1,5 +1,5 @@
 import css from './ImageCard.module.css';
-import { ImageCardProps } from '../../types.ts';
+import type { ImageCardProps } from '../../types.ts';
 
 export default function ImageCard({ src, alt }: ImageCardProps) {
   return (

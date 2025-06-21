@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import type { useState } from 'react';
 import Modal from 'react-modal';
 import css from './ImageModal.module.css';
-import { UnsplashImage } from '../../types';
+import type { UnsplashImage } from '../../types';
 
 Modal.setAppElement('#root');
 

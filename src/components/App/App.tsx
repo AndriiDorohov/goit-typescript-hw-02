@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, RefObject } from 'react';
+import { useState, useEffect, useRef, type RefObject } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import css from './App.module.css';
 import SearchBar from '../SearchBar/SearchBar';
@@ -8,7 +8,7 @@ import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import ImageModal from '../ImageModal/ImageModal';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import { fetchImages } from '../../api/unsplashApi';
-import { UnsplashImage } from '../../types';
+import type { UnsplashImage } from '../../types';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -102,7 +102,7 @@ export default function App() {
           <ImageGallery
             images={images}
             onImageClick={handleImageClick}
-            galleryRef={loadMoreRef as RefObject<HTMLUListElement>}
+            galleryRef={loadMoreRef as unknown as RefObject<HTMLUListElement>}
           />
           {isLoading ? (
             <Loader />

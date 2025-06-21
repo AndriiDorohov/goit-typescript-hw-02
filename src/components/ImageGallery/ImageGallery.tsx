@@ -1,7 +1,7 @@
-import { RefObject } from 'react';
+import type { RefObject } from 'react';
 import css from './ImageGallery.module.css';
 import ImageCard from '../ImageCard/ImageCard';
-import { UnsplashImage } from '../../types';
+import type { UnsplashImage } from '../../types';
 
 interface ImageGalleryProps {
   images: UnsplashImage[];
