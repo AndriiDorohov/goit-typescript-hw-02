@@ -1,10 +1,16 @@
-import { useState } from "react";
-import Modal from "react-modal";
-import css from "./ImageModal.module.css";
+import { useState } from 'react';
+import Modal from 'react-modal';
+import css from './ImageModal.module.css';
+import { UnsplashImage } from '../../types';
 
-Modal.setAppElement("#root");
+Modal.setAppElement('#root');
 
-export default function ImageModal({ image, onClose }) {
+interface ImageModalProps {
+  image: UnsplashImage | null;
+  onClose: () => void;
+}
+
+export default function ImageModal({ image, onClose }: ImageModalProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleImageLoad = () => setIsLoaded(true);
@@ -19,8 +25,8 @@ export default function ImageModal({ image, onClose }) {
       <div className={css.modalContent}>
         <img
           src={image?.urls?.full}
-          alt={image?.alt_description || "Selected"}
-          className={`${css.modalImage} ${isLoaded ? css.loaded : ""}`}
+          alt={image?.alt_description || 'Selected'}
+          className={`${css.modalImage} ${isLoaded ? css.loaded : ''}`}
           onLoad={handleImageLoad}
         />
       </div>

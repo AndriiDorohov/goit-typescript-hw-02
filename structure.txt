@@ -1,5 +1,6 @@
 .
 ├── README.md
+├── eslint.config.js
 ├── index.html
 ├── package-lock.json
 ├── package.json
@@ -34,9 +35,11 @@
 │   │       ├── SearchBar.module.css
 │   │       └── SearchBar.tsx
 │   ├── index.css
-│   ├── main.ts
+│   ├── main.tsx
+│   ├── types.ts
 │   └── vite-env.d.ts
 ├── structure.txt
-└── tsconfig.json
+├── tsconfig.json
+└── vite.config.js
 
-13 directories, 27 files
+13 directories, 30 files

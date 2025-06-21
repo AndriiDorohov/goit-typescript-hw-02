@@ -1,6 +1,6 @@
-export default function ErrorMessage() {
+export default function ErrorMessage(): JSX.Element {
   return (
-    <p style={{ color: "red", textAlign: "center" }}>
+    <p style={{ color: 'red', textAlign: 'center' }}>
       Something went wrong! Please try again later.
     </p>
   );
