@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import css from './LoadMoreBtn.module.css';
 
 interface LoadMoreBtnProps {
@@ -13,7 +14,7 @@ const LoadMoreBtn = forwardRef<HTMLDivElement, LoadMoreBtnProps>(
         </button>
       </div>
     );
-  },
+  }
 );
 
 export default LoadMoreBtn;

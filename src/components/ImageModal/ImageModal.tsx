@@ -1,4 +1,4 @@
-import type { useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
 import css from './ImageModal.module.css';
 import type { UnsplashImage } from '../../types';

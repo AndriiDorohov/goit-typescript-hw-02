@@ -1,7 +1,7 @@
-import axios from "axios";
-import { UnsplashImage } from "../types.ts";
+import axios from 'axios';
+import type { UnsplashImage } from '../types.ts';
 
-axios.defaults.baseURL = "https://api.unsplash.com";
+axios.defaults.baseURL = 'https://api.unsplash.com';
 
 const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
 
@@ -12,9 +12,9 @@ interface FetchImagesResponse {
 
 export const fetchImages = async (
   query: string,
-  page: number,
+  page: number
 ): Promise<FetchImagesResponse> => {
-  const response = await axios.get("/search/photos", {
+  const response = await axios.get('/search/photos', {
     params: {
       query,
       page,
